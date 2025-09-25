@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-25T20:56:33 EET" name="Default suite" finished-at="2025-09-25T20:57:33 EET" duration-ms="59941">
+    <groups>
+    </groups>
+    <test started-at="2025-09-25T20:56:33 EET" name="Default test" finished-at="2025-09-25T20:57:33 EET" duration-ms="59941">
+      <class name="Automation.MyTestCases">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:56:34 EET" name="mySetup" finished-at="2025-09-25T20:56:37 EET" duration-ms="3651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySetup -->
+        <test-method signature="SignupTest()[pri:1, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:56:37 EET" name="SignupTest" finished-at="2025-09-25T20:56:55 EET" duration-ms="17480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignupTest -->
+        <test-method signature="LogoutTest()[pri:2, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:56:55 EET" name="LogoutTest" finished-at="2025-09-25T20:56:56 EET" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method signature="Login()[pri:3, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:56:56 EET" name="Login" finished-at="2025-09-25T20:57:01 EET" duration-ms="5171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:01 EET" name="AddItemToTheCart" finished-at="2025-09-25T20:57:05 EET" duration-ms="3953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemToTheCart -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:05 EET" name="AddItemToTheCart" finished-at="2025-09-25T20:57:15 EET" duration-ms="9907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemToTheCart -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:15 EET" name="AddItemToTheCart" finished-at="2025-09-25T20:57:24 EET" duration-ms="8585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemToTheCart -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:24 EET" name="AddItemToTheCart" finished-at="2025-09-25T20:57:29 EET" duration-ms="5576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemToTheCart -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:29 EET" name="AddItemToTheCart" finished-at="2025-09-25T20:57:33 EET" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemToTheCart -->
+        <test-method is-config="true" signature="AfterMyTest()[pri:0, instance:Automation.MyTestCases@27abb6ca]" started-at="2025-09-25T20:57:33 EET" name="AfterMyTest" finished-at="2025-09-25T20:57:33 EET" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMyTest -->
+      </class> <!-- Automation.MyTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
