@@ -61,19 +61,9 @@ public class MyTestCases extends myData {
 		mySelectElementForCountry.selectByIndex(108);
 
 		Thread.sleep(2000);
-
-		// To Select State
-
-		// Option1 (Select by index)
+	
 		mySelectElementForState.selectByIndex(theSelectStateIndex);
-
-		// Option 2 (Select by value)
-		// mySelectElementForState.selectByValue("1709");
-
-		// Option 3 (Select by visible text)
-		// mySelectElementForState.selectByVisibleText("Al Balqa'");
-
-		// Write Address
+	
 		List<WebElement> AlltheStates = TheState.findElements(By.tagName("option"));
 
 		String theCity = AlltheStates.get(theSelectStateIndex).getText();
@@ -92,7 +82,6 @@ public class MyTestCases extends myData {
 
 		WebElement ContinueButton = driver.findElement(By.xpath("//button[@title='Continue']"));
 
-		// Actions
 		FirstName.sendKeys(TheFirstName);
 		LastName.sendKeys(TheLastName);
 		Email.sendKeys(TheEmail);
@@ -119,38 +108,16 @@ public class MyTestCases extends myData {
 
 		String ActualSignUpMessage = driver.findElement(By.className("maintext")).getText();
 
-		// This is a test case that compares the actual result with the expected result
-		// and works like the if
 		Assert.assertEquals(ActualSignUpMessage, ExpectedTextforTheSignUp);
-
-//		//Static
-//		
-//		String [] FirstNames = {"Sam", "Tom", "Dan", "Lily", "Dev", "Mel"}; 
-//		
-//		//Dynamic
-//		List<String> mycolors = new ArrayList<String>();
-//
-//		mycolors.add("green");
-//		mycolors.add("blue");
-//		
-//		System.out.println(FirstNames[0]);
-//		System.out.println(mycolors.get(0));
-//		
 
 	}
 
 	@Test(priority = 2, enabled = true)
 	public void LogoutTest() throws InterruptedException {
 
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 
-		// Link text Method
 		driver.findElement(By.linkText("Logoff")).click();
-
-		// Partial link text method
-		// driver.findElement(By.partialLinkText("Logo")).click();
-
-		// System.out.println(driver.getPageSource());
 
 		boolean ActualValueForLogout = driver.getPageSource().contains(TheLogoutMessage);
 
@@ -162,22 +129,7 @@ public class MyTestCases extends myData {
 
 	public void Login() throws InterruptedException {
 
-		// Search and count how many tags of type <a this pages has
-		// System.out.println(driver.findElements(By.tagName("a")).size());
-
-		// Click Login or Register button
-
-		// ----LinkText method----
-		// driver.findElement(By.linkText("Login or register")).click();
-
-		// ----Xpath method----
-		// driver.findElement(By.xpath("//a[@href='https://automationteststore.com/index.php?rt=account/login']")).click();
-
-		// Using selector Hub:
-		// 1) Xpath
-		// driver.findElement(By.xpath("//a[normalize-space()='Login or
-		// register']")).click();
-		// 2) CSS Selector
+		
 		driver.findElement(By.cssSelector("ul[id='customer_menu_top'] li a")).click();
 
 		WebElement LoginNameInput = driver.findElement(By.id("loginFrm_loginname"));
@@ -193,8 +145,6 @@ public class MyTestCases extends myData {
 		Thread.sleep(3000);
 
 		LoginButton.click();
-
-		// Now we are logged in
 
 		boolean ActualValue = driver.getPageSource().contains(WelcomeMessage);
 		boolean ExpectedValue = true;
@@ -226,7 +176,7 @@ public class MyTestCases extends myData {
 				return; // success
 			}
 
-			driver.navigate().back(); // try again
+			driver.navigate().back(); 
 		}
 
 		throw new RuntimeException("No in-stock item found after 10 attempts.");
@@ -237,8 +187,6 @@ public class MyTestCases extends myData {
 	@AfterTest
 
 	public void AfterMyTest() {
-
-		//driver.close();
 
 		driver.quit();
 
