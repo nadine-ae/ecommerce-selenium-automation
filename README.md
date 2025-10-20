@@ -1,110 +1,48 @@
-# Ecommerce Selenium Automation
+# Ecommerce-Selenium-Automation
 
-**Automated testing project for an e-commerce web application**, focusing on **UI-based functional test cases** using **Selenium WebDriver** and **TestNG**.  
-This project validates core user interactions such as login, registration, product browsing, and cart management — without database verification.
-
----
+This project contains automated UI test scripts for an e-commerce web application, built with **Java, Selenium WebDriver, and TestNG**.  
+It demonstrates core functional test cases such as user registration, login, product browsing, and cart management — focusing on UI validation only, without database verification.
 
 ## Overview
+The purpose of this project is to practice and showcase automation testing skills:
+- Using Selenium WebDriver for browser automation.
+- Structuring tests with TestNG annotations.
+- Applying assertions to validate expected outcomes.
+- Running tests on a sample e-commerce web application.
 
-This project demonstrates end-to-end **functional UI automation** for an e-commerce web application.  
-It showcases the application of structured test design, assertions, and browser automation to ensure the stability and usability of key user workflows.
-
-**Key Highlights:**
-- Automates core user journeys on a retail web application  
-- Applies **TestNG** annotations and assertions for test organization and validation  
-- Follows a **modular, maintainable structure** suitable for scalable automation projects  
-- Provides a foundation for integrating advanced frameworks (e.g., Page Object Model, Data-Driven Testing)
-
----
-
-## Tech Stack
-
-| Category | Tools & Technologies |
-|-----------|---------------------|
-| Programming Language | Java |
-| Automation Framework | Selenium WebDriver, TestNG |
-| Build Tool | Maven |
-| IDE | Eclipse / IntelliJ IDEA |
-| Browser Drivers | ChromeDriver, EdgeDriver |
-| Version Control | Git, GitLab |
-| OS | Windows 11 |
-
----
-
-## Setup Instructions
-
+## Setup
 ### Prerequisites
-- **Java JDK 8** or higher  
-- **Maven** installed and configured  
-- **TestNG** plugin (if running from an IDE)  
-- **Chrome** or **Edge** browser and respective WebDriver
+- Java JDK 8 or later  
+- Maven  
+- TestNG  
+- A supported browser (e.g., Chrome, Edge) with the appropriate WebDriver
 
 ### Installation
-
 1. Clone the repository:
    ```bash
-   git clone https://gitlab.com/<your-username>/ecommerce-selenium-automation.git
+   git clone https://github.com/nadine-ae/ecommerce-selenium-automation.git
    ```
-2. Open the project in your preferred IDE as a **Maven Project**.  
-3. Verify that all dependencies are downloaded automatically via `pom.xml`.  
-
----
+2. Import the project into your IDE (e.g., Eclipse or IntelliJ) as a Maven project.  
+3. Ensure dependencies are installed (see `pom.xml`).
 
 ## Running the Tests
-
-To run all test cases via Maven:
-```bash
-mvn clean test
-```
-
-Or run individual tests directly from the IDE using TestNG configuration.
-
----
+- To run tests with Maven:
+  ```bash
+  mvn clean test
+  ```
+- Or run individual tests directly from your IDE via TestNG.
 
 ## Test Coverage
-
-The following UI workflows are validated:
-
-- **User Registration & Login**  
-- **Product Browsing & Search Functionality**  
-- **Add to Cart / Remove from Cart**  
-- **Form & Input Validation (Positive & Negative Scenarios)**  
-- **UI Message & Element Assertions**
-
-> Note: This project focuses on **UI validation only** — no database or API-level testing is performed.
-
----
+Current test cases include:
+- User registration and login flow.  
+- Product browsing and search functionality.  
+- Adding and removing products from the cart.  
+- Validating UI messages and navigation elements.
 
 ## Project Structure
+- `src/test/java` → contains TestNG test classes and Selenium logic  
+- `pom.xml` → Maven configuration with dependencies (Selenium, TestNG)  
+- `README.md` → project documentation
 
-```
-ecommerce-selenium-automation/
-│
-├── pom.xml                # Maven configuration file with dependencies
-├── README.md              # Project documentation
-└── src/
-    └── test/
-        └── java/
-            └── tests/     # TestNG test classes and Selenium logic
-```
-
----
-
-## Future Enhancements
-- Integrate **Page Object Model (POM)** for improved maintainability  
-- Add **Data-Driven Testing** using Excel or JSON inputs  
-- Introduce **API testing layer** (Postman / RestAssured) for end-to-end validation  
-- Include **Jenkins CI/CD** pipeline for automated execution  
-
----
-
-## Author
-
-**Nadine Abu-Eita**  
-Junior QA Engineer | Manual & Automation Testing | Agile | Selenium + Java  
-[LinkedIn](https://www.linkedin.com/in/nadine-abueita) • [GitLab](https://gitlab.com/your-username)
-
----
-
-"Quality is never an accident; it is always the result of intelligent effort." – John Ruskin
+## Notes
+- This project focuses on **UI-based functional testing** only — no database or API validation.
